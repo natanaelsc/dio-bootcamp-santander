@@ -1,7 +1,7 @@
 package com.project.bootcampsantander.mapper;
 
 import com.project.bootcampsantander.model.Stock;
-import com.project.bootcampsantander.model.StockDTO;
+import com.project.bootcampsantander.model.dto.StockDTO;
 
 import org.springframework.stereotype.Component;
 

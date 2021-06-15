@@ -10,11 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_stock")
+@Table(name = "tb_stock") // Tabela do banco de dados
 public class Stock {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // Incrementa na base de dados
+    @GeneratedValue(strategy = GenerationType.AUTO) // Auto incrementa na base de dados
     @Column(name = "id") // Correlação
     private Long id;
 

@@ -14,6 +14,7 @@ public class BootcampSantanderApplication {
 		SpringApplication.run(BootcampSantanderApplication.class, args);
 	}
 
+	// Customização OpenAPI
 	public OpenAPI customOpenAPI() {
 		return new OpenAPI().info(new Info()
 		.title("")

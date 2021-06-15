@@ -1,4 +1,4 @@
-package com.project.bootcampsantander.model;
+package com.project.bootcampsantander.model.dto;
 
 import java.time.LocalDate;
 
@@ -7,27 +7,28 @@ import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
+// DTO: Data Transfer Object
 public class StockDTO {
     
-    private Long id;
+    private Long id; // Identificador da ação
 
     @NotNull
-    private String name;
+    private String name; // Nome da ação
 
     @NotNull
     @DecimalMin(value = "0.00")
-    @Digits(integer = 6, fraction = 2)
-    private Double price;
+    @Digits(integer = 6, fraction = 2) 
+    private Double price;   // Preço da ação
 
     @NotNull
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
-    private LocalDate date;
+    private LocalDate date; // Data
 
     @NotNull
     @Digits(integer = 3, fraction = 2)
-    private Double variation;
+    private Double variation; // Variação
 
+    // Setters e Getters, métodos acessores
     public Long getId() {
         return id;
     }

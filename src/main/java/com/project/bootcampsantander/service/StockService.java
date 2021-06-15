@@ -7,7 +7,7 @@ import javax.transaction.Transactional;
 import com.project.bootcampsantander.exceptions.BusinessException;
 import com.project.bootcampsantander.mapper.StockMapper;
 import com.project.bootcampsantander.model.Stock;
-import com.project.bootcampsantander.model.StockDTO;
+import com.project.bootcampsantander.model.dto.StockDTO;
 import com.project.bootcampsantander.repository.StockRepository;
 import com.project.bootcampsantander.util.MessageUtils;
 
